@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ddns-updater:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ddns-updater
+    restart: unless-stopped
